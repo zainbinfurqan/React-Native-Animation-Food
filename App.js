@@ -18,6 +18,7 @@ import {
   StatusBar,
   Modal
 } from 'react-native';
+import NetworkConnectivity from './src/NetworkConnetivity'
 import ImageZoom from 'react-native-image-pan-zoom';
 import {
   Header,
@@ -48,6 +49,7 @@ const App = () => {
         <Image style={{ width: 200, height: 200 }}
           source={{ uri: 'https://res.cloudinary.com/zainahmed/image/upload/v1598882214/garageAssets/y6bhfe9ucpdj6y3jjnrv.png' }} />
       </ImageZoom> */}
+      {/* <NetworkConnectivity /> */}
       <AnimationView />
       {/* <Modal visible={true} transparent={true}>
         <ImageViewer style={{ height: 100, width: '100%' }} imageUrls={images} />

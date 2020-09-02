@@ -9,8 +9,12 @@ function Ingredients(props) {
                 <Image style={[props.index % 2 === 0 ? constants.DarkThemeCss.icon : constants.LightThemeCss.icon,]}
                     source={props.index % 2 === 0 ? constants.FOOD_DATA_DARK_ICONS.ingredients_icon : constants.FOOD_DATA_LIGHT_ICONS.ingredients_icon} />
             </View>
-            <View style={{ flex: .9, justifyContent: 'center', paddingLeft: 10 }}>
-                <Text style={[props.index % 2 === 0 ? constants.DarkThemeCss.text : constants.LightThemeCss.text,]}>{constants.FOOD_DATA[props.index].ingredients}</Text>
+            <View style={{ flex: .9, justifyContent: 'center', paddingLeft: 10, flexDirection: 'row', flexWrap: 'wrap' }}>
+                {constants.FOOD_DATA[props.index].ingredients.map((_, i) => {
+                    return (
+                        <Text key={i} style={[props.index % 2 === 0 ? constants.DarkThemeCss.text : constants.LightThemeCss.text,]}>{_}</Text>
+                    )
+                })}
             </View>
         </View>
     )

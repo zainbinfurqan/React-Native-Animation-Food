@@ -18,53 +18,53 @@ export const constants = {
     FOOD_DATA: [
         {
             id: 1,
-            recipe_name: 'Chiken Kabab',
-            preparing_time: '20 min',
+            recipe_name: 'Greek Garbanzo Stew',
+            preparing_time: '40 Mins',
             food_image: require('../assets/dish-5.png'),
-            ingredients: ['gosht', 'mirch', 'namak', 'papita', 'koela'],
-            chief_name: 'Zain',
-            description: 'Dish will be delishes and eat it with raita'
+            ingredients: ['onion', 'diced', 'oregano', 'tomato paste', 'baby spinach', 'rosemary', 'feta cheese', 'garbanzo beans'],
+            chief_name: 'KindMealChef',
+            description: `Saute onion in hot oil in a Dutch oven over medium heat for 6-8 minutes,  15 minute`
         },
         {
             id: 2,
-            recipe_name: 'Chiken Kabab',
-            preparing_time: '20 min',
+            recipe_name: 'Vegetarian VFC',
+            preparing_time: '1 Hr',
             food_image: require('../assets/dish-4.png'),
-            ingredients: ['gosht', 'mirch', 'namak', 'papita', 'koela'],
-            chief_name: 'Zain',
-            description: 'Dish will be delishes and eat it with raita'
+            ingredients: ['Rolled Oats', 'Dried Thyme', 'Onion', 'Tomato', 'White/Black Pepper'],
+            chief_name: 'BluePenguin',
+            description: `Saute onion in hot oil in a Dutch oven over medium heat for 6-8 minutes,  15 minute`
         },
         {
             id: 3,
-            recipe_name: 'Chiken Kabab',
-            preparing_time: '20 min',
+            recipe_name: 'Ceasar Dressing',
+            preparing_time: '20 Mins',
             food_image: require('../assets/dish-3.png'),
-            ingredients: ['gosht', 'mirch', 'namak', 'papita', 'koela'],
-            chief_name: 'Zain',
-            description: 'Dish will be delishes and eat it with raita'
+            ingredients: ['Shallot', 'Mayonnaise', 'Anchovy fillets', 'Yellow onion', 'koela'],
+            chief_name: 'Janelle',
+            description: `Saute onion in hot oil in a Dutch oven over medium heat for 6-8 minutes,  15 minute`
         },
         {
             id: 4,
-            recipe_name: 'Chiken Kabab',
-            preparing_time: '20 min',
-            food_image: require('../assets/dish-2.png'),
-            ingredients: ['gosht', 'mirch', 'namak', 'papita', 'koela'],
-            chief_name: 'Zain',
-            description: 'Dish will be delishes and eat it with raita'
+            recipe_name: 'Greek Garbanzo Stew',
+            preparing_time: '40 Mins',
+            food_image: require('../assets/dish-5.png'),
+            ingredients: ['onion', 'diced', 'oregano', 'tomato paste', 'baby spinach', 'rosemary', 'feta cheese', 'garbanzo beans'],
+            chief_name: 'KindMealChef',
+            description: `Saute onion in hot oil in a Dutch oven over medium heat for 6-8 minutes,  15 minute`
         },
         {
             id: 5,
-            recipe_name: 'Chiken Kabab',
-            preparing_time: '20 min',
-            food_image: require('../assets/dish-1.png'),
-            ingredients: ['gosht', 'mirch', 'namak', 'papita', 'koela'],
-            chief_name: 'Zain',
-            description: 'Dish will be delishes and eat it with raita'
+            recipe_name: 'Vegetarian VFC',
+            preparing_time: '1 Hr',
+            food_image: require('../assets/dish-4.png'),
+            ingredients: ['Rolled Oats', 'Dried Thyme', 'Onion', 'Tomato', 'White/Black Pepper'],
+            chief_name: 'BluePenguin',
+            description: `Saute onion in hot oil in a Dutch oven over medium heat for 6-8 minutes,  15 minute`
         },
 
     ],
     LightTheme: {
-        iconColor: '#34495E'
+        iconColor: '#07344B'
     },
     DarkTheme: {
         iconColor: '#E5E5E5'
@@ -72,19 +72,19 @@ export const constants = {
     LightThemeCss: {
         halfRoundPicBorder: {
             borderWidth: 6,
-            borderColor: '#075D86',
+            borderColor: '#07344B',
             height: 128,
             marginTop: -5,
-            borderTopEndRadius: 62,
-            borderBottomEndRadius: 62,
-            marginLeft: 47,
-            width: 77,
+            borderTopStartRadius: 62,
+            borderBottomStartRadius: 62,
+            marginRight: 60,
+            width: 70,
             position: 'absolute',
         },
         lineSeperater: {
             borderBottomWidth: 0.34,
             marginRight: 20,
-            borderColor: '#075D86',
+            borderColor: '#07344B',
             marginLeft: 20,
             shadowColor: "#000",
             marginTop: 140,
@@ -100,11 +100,11 @@ export const constants = {
         picMain: {
             borderRadius: 100,
             padding: 10,
-            borderColor: '#075D86',
+            borderColor: '#07344B',
             marginTop: 10,
             position: 'absolute',
             alignSelf: 'center',
-            backgroundColor: '#075D86',
+            backgroundColor: '#07344B',
             shadowColor: "#000",
             shadowOffset: {
                 width: 0,
@@ -118,7 +118,7 @@ export const constants = {
         icon: { height: 35, width: 35, alignSelf: 'center' },
         text: {
             color: 'black',
-            fontSize: 35,
+            fontSize: 25,
             margin: 10,
             fontFamily: 'YellowrabbitPersonaluse-qZYyd'
         },
@@ -131,7 +131,7 @@ export const constants = {
             borderWidth: 0.34,
             paddingLeft: 10, paddingRight: 10, marginRight: 2, borderRadius: 25
         },
-        line: { borderBottomWidth: 0.30, marginRight: 10, marginLeft: 10, borderColor: '#075D86' },
+        line: { borderBottomWidth: 0.30, marginRight: 10, marginLeft: 10, borderColor: '#07344B' },
 
     },
 
@@ -140,11 +140,11 @@ export const constants = {
             borderWidth: 6,
             borderColor: '#D9EDF7',
             height: 128,
-            marginTop: -5,
+            marginTop: -4,
             borderTopEndRadius: 62,
             borderBottomEndRadius: 62,
-            marginLeft: 47,
-            width: 77,
+            marginLeft: 60,
+            width: 65,
             position: 'absolute',
         },
         lineSeperater: {
@@ -184,7 +184,7 @@ export const constants = {
         icon: { height: 35, width: 35, alignSelf: 'center' },
         text: {
             color: 'white',
-            fontSize: 35,
+            fontSize: 25,
             fontFamily: 'YellowrabbitPersonaluse-qZYyd',
             margin: 10,
         },

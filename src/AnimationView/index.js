@@ -38,7 +38,14 @@ function AnimationView(props) {
         }).start()
     })
 
+
+
+    function handleConnectivityChange(value) {
+        console.log("value=>", value)
+    }
+
     const setActiveIndex = React.useCallback((index) => {
+        console.log(index)
         activeIndex.setValue(index)
         ref.current.animateNextTransition()
         setIndex(index)
@@ -89,7 +96,7 @@ function AnimationView(props) {
                                 <Transitioning.View
                                     ref={ref}
                                     transition={transition}
-                                    key={i} style={{ height, backgroundColor: i % 2 === 0 ? '#075D86' : '#D9EDF7' }}>
+                                    key={i} style={{ height, backgroundColor: i % 2 === 0 ? '#07344B' : '#D9EDF7' }}>
                                 </Transitioning.View>
                             )
                         })}
@@ -107,7 +114,7 @@ function AnimationView(props) {
                             <PosedView
                                 key='image1'
                                 style={[{ borderWidth: 5, marginTop: 10, position: 'absolute', justifyContent: 'center', alignSelf: 'center' }, index % 2 === 0 ? DarkTheme.picMain : LightTheme.picMain]}>
-                                <LineSeparater />
+                                <LineSeparater index={index} />
                                 <Image style={{ borderWidth: 3, height: 100, width: 100, borderRadius: 100, }} source={constants.FOOD_DATA[index].food_image} />
                             </PosedView>}
 
@@ -150,11 +157,11 @@ const LightTheme = {
         borderWidth: StyleSheet.hairlineWidth,
         borderRadius: 100,
         padding: 10,
-        borderColor: '#075D86',
+        borderColor: '#07344B',
         marginTop: 10,
         position: 'absolute',
         alignSelf: 'center',
-        backgroundColor: '#075D86',
+        backgroundColor: '#07344B',
         shadowColor: "#000",
         shadowOffset: {
             width: 0,

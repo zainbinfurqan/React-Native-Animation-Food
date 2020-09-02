@@ -4,7 +4,7 @@ import { constants } from '../../config/constants';
 
 function CheifName(props) {
     return (
-        <View style={{ flexDirection: 'row', padding: 5 }}>
+        <View style={{ flexDirection: 'row', }}>
             <View style={{ flex: .1, justifyContent: 'center' }}>
                 <Image style={[props.index % 2 === 0 ? constants.DarkThemeCss.icon : constants.LightThemeCss.icon,]}
                     source={props.index % 2 === 0 ? constants.FOOD_DATA_DARK_ICONS.chief_name_icon : constants.FOOD_DATA_LIGHT_ICONS.chief_name_icon} />
