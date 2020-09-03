@@ -29,6 +29,10 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import ImageViewer from 'react-native-image-zoom-viewer';
 import AnimationView from './src/AnimationView'
+import UploadImage from './src/UploadImage'
+import ExpenseTracker from './src/ExpenseTracker/Main'
+import { ExpensTrackerProvider } from './src/ExpenseTracker/ExpensTrackerProvider'
+
 const images = [
   {
     url: 'https://res.cloudinary.com/zainahmed/image/upload/v1598882214/garageAssets/y6bhfe9ucpdj6y3jjnrv.png',
@@ -50,7 +54,11 @@ const App = () => {
           source={{ uri: 'https://res.cloudinary.com/zainahmed/image/upload/v1598882214/garageAssets/y6bhfe9ucpdj6y3jjnrv.png' }} />
       </ImageZoom> */}
       {/* <NetworkConnectivity /> */}
-      <AnimationView />
+      {/* <AnimationView /> */}
+      {/* <UploadImage /> */}
+      <ExpensTrackerProvider>
+        <ExpenseTracker />
+      </ExpensTrackerProvider>
       {/* <Modal visible={true} transparent={true}>
         <ImageViewer style={{ height: 100, width: '100%' }} imageUrls={images} />
       </Modal> */}
