@@ -8,13 +8,11 @@ function ExpenseInput(props) {
     const [expenseText, setExpenseText] = useState('')
     const [expenseDescription, setExpenseDescription] = useState('')
     const { addExpensive } = useContext(ContextStore)
-    // const values = useContext(ContextStore)
 
     function onAddExpense() {
         addExpensive({ price: expenseText, description: expenseDescription })
         setExpenseText('')
         setExpenseDescription('')
-        // values.addExpense(expenseText)
     }
 
     return (
@@ -39,7 +37,6 @@ function ExpenseInput(props) {
 export default ExpenseInput
 
 const styles = StyleSheet.create({
-
     inputMain: {
         padding: 5,
         justifyContent: 'space-around',
@@ -55,8 +52,5 @@ const styles = StyleSheet.create({
     button: {
         borderWidth: 2,
         alignSelf: 'flex-end',
-
     }
-
-
 });

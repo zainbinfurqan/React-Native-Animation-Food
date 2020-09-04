@@ -41,11 +41,9 @@ function AnimationView(props) {
 
 
     function handleConnectivityChange(value) {
-        console.log("value=>", value)
     }
 
     const setActiveIndex = React.useCallback((index) => {
-        console.log(index)
         activeIndex.setValue(index)
         ref.current.animateNextTransition()
         setIndex(index)

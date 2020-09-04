@@ -1,31 +1,34 @@
 import React, { useContext } from 'react';
 import { ContextStore } from '../ExpensTrackerProvider'
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet, ScrollView } from 'react-native';
 
 function ExpenseList(props) {
     const { expense } = useContext(ContextStore)
-    console.log("expense=>", expense)
-    let total = 0;
-    expense.filter(items => { total = total + parseInt(items.price) })
-    // expense.filter(items => console.log(parseInt(items.price)))
     return (
-        <View style={{ flex: 1 }}>
-            <Text style={{ alignSelf: 'center', paddingLeft: 10, fontFamily: 'YellowrabbitPersonaluse-qZYyd', justifyContent: 'center', fontSize: 35 }}>Transaction history</Text>
-            <Text style={{ paddingLeft: 10, fontFamily: 'YellowrabbitPersonaluse-qZYyd', justifyContent: 'center', fontSize: 25 }}>Total: {total}</Text>
+        <ScrollView style={styles.main}>
+            <Text style={styles.input}>Transaction history</Text>
             {expense.map((_, i) => {
                 return (
-                    <View key={i} style={{ borderWidth: 1, padding: 5, margin: 5, }}>
+                    <View key={i} style={styles.cardMain}>
                         <View style={{ flexDirection: 'row' }}>
-                            <Text style={{ fontFamily: 'YellowrabbitPersonaluse-qZYyd', justifyContent: 'center', fontSize: 25 }}>Amount: {_.price} </Text>
-                            <Text style={{ fontFamily: 'YellowrabbitPersonaluse-qZYyd', alignSelf: 'center', fontSize: 15, }}>(PRK)</Text>
+                            <Text style={styles.peiceText}>Amount: {_.price} </Text>
+                            <Text style={{ fontFamily: 'samsung_s_sharp', alignSelf: 'center', fontSize: 15, }}>(PRK)</Text>
                         </View>
-                        <View style={{ borderWidth: 1, padding: 5, margin: 5, flexDirection: 'row' }}>
-                            <Text style={{ fontFamily: 'YellowrabbitPersonaluse-qZYyd', justifyContent: 'center', fontSize: 25 }}>Description: {_.description} </Text>
+                        <View style={{ borderWidth: 0.34, padding: 5, margin: 5, flexDirection: 'row' }}>
+                            <Text style={styles.description}>Description: {_.description} </Text>
                         </View>
                     </View>
                 )
             })}
-        </View>
+        </ScrollView>
     )
 }
 export default ExpenseList
+
+const styles = StyleSheet.create({
+    main: { flex: 1 },
+    input: { alignSelf: 'center', paddingLeft: 10, fontFamily: 'samsung_s_sharp', justifyContent: 'center', fontSize: 20 },
+    cardMain: { borderWidth: 0.34, padding: 5, margin: 5, },
+    peiceText: { fontFamily: 'samsung_s_sharp', justifyContent: 'center', fontSize: 15 },
+    description: { fontFamily: 'samsung_s_sharp', justifyContent: 'center', fontSize: 15 },
+});

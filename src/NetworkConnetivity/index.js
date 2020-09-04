@@ -11,7 +11,6 @@ function NetworkConnectivity(props) {
 
     function checkoutNetwork() {
         NetInfo.fetch().then(state => {
-            console.log("state=>", state.isConnected)
             setIsNetworkConnect(state.isConnected)
         });
     }

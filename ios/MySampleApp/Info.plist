@@ -57,6 +57,10 @@
 	<array>
 		<string>YellowrabbitPersonaluse-qZYyd.otf</string>
 		<string>YellowrabbitPersonaluse-qZYyd.ttf</string>
+		<string>HelveticaLTStd-Bold.ttf</string>
+		<string>HelveticaNeueLTCom-Md.ttf</string>
+		<string>samsung_s_sharp.ttf</string>
+		<string>SamsungSharpSans-Bold.ttf</string>
 	</array>
 </dict>
 </plist>
