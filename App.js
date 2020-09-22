@@ -32,6 +32,12 @@ import AnimationView from './src/AnimationView'
 import UploadImage from './src/UploadImage'
 import ExpenseTracker from './src/ExpenseTracker/Main'
 import { ExpensTrackerProvider } from './src/ExpenseTracker/ExpensTrackerProvider'
+import DiLLingPad from './src/dillingPad'
+import PushNotificaiton_ from './src/PushNotification'
+import WaterMark from './src/watermark'
+import Feed from './src/FiverWork/CardsViews'
+import Notification from './src/FiverWork/Notification'
+import Review from './src/FiverWork/Reviews'
 
 const images = [
   {
@@ -54,11 +60,17 @@ const App = () => {
           source={{ uri: 'https://res.cloudinary.com/zainahmed/image/upload/v1598882214/garageAssets/y6bhfe9ucpdj6y3jjnrv.png' }} />
       </ImageZoom> */}
       {/* <NetworkConnectivity /> */}
+      {/* <Feed /> */}
+      {/* <Notification /> */}
+      <Review />
       {/* <AnimationView /> */}
       {/* <UploadImage /> */}
-      <ExpensTrackerProvider>
+      {/* <DiLLingPad /> */}
+      {/* <PushNotificaiton_ /> */}
+      {/* <WaterMark /> */}
+      {/* <ExpensTrackerProvider>
         <ExpenseTracker />
-      </ExpensTrackerProvider>
+      </ExpensTrackerProvider> */}
       {/* <Modal visible={true} transparent={true}>
         <ImageViewer style={{ height: 100, width: '100%' }} imageUrls={images} />
       </Modal> */}
