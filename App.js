@@ -38,6 +38,8 @@ import WaterMark from './src/watermark'
 import Feed from './src/FiverWork/CardsViews'
 import Notification from './src/FiverWork/Notification'
 import Review from './src/FiverWork/Reviews'
+import FruitCard from './src/FiverWork/FuritCards'
+import Ticket from './src/FiverWork/Ticket'
 
 const images = [
   {
@@ -62,7 +64,8 @@ const App = () => {
       {/* <NetworkConnectivity /> */}
       {/* <Feed /> */}
       {/* <Notification /> */}
-      <Review />
+      {/* <Review /> */}
+      {/* <FruitCard /> */}
       {/* <AnimationView /> */}
       {/* <UploadImage /> */}
       {/* <DiLLingPad /> */}
@@ -75,6 +78,7 @@ const App = () => {
         <ImageViewer style={{ height: 100, width: '100%' }} imageUrls={images} />
       </Modal> */}
       {/* </View> */}
+      <Ticket />
       {/* <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <ScrollView

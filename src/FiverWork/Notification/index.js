@@ -65,7 +65,7 @@ function Notification(props) {
                         shadowRadius: 1.00,
 
                         elevation: 1,
-                        flexDirection: 'column', padding: 5, margin: 5, borderRadius: 10, borderColor: '#E3E7E7'
+                        flexDirection: 'column', padding: 5, margin: 5, borderRadius: 3, borderColor: '#E3E7E7'
                     }}>
                         <View style={{ flexDirection: 'row', width: '100%' }}>
                             <View style={{ flex: 0.1, justifyContent: 'center', }}>
