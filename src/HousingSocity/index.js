@@ -5,7 +5,7 @@ import DetailView from './DetailView'
 
 function HousingSocity(props) {
     return (
-        // <Search />
+        // <Home />
         <DetailView />
     );
 }
