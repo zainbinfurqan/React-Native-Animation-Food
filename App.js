@@ -40,6 +40,7 @@ import Notification from './src/FiverWork/Notification'
 import Review from './src/FiverWork/Reviews'
 import FruitCard from './src/FiverWork/FuritCards'
 import Ticket from './src/FiverWork/Ticket'
+import HousingSocity from './src/HousingSocity'
 
 const images = [
   {
@@ -61,6 +62,7 @@ const App = () => {
         <Image style={{ width: 200, height: 200 }}
           source={{ uri: 'https://res.cloudinary.com/zainahmed/image/upload/v1598882214/garageAssets/y6bhfe9ucpdj6y3jjnrv.png' }} />
       </ImageZoom> */}
+      <HousingSocity />
       {/* <NetworkConnectivity /> */}
       {/* <Feed /> */}
       {/* <Notification /> */}
@@ -78,7 +80,7 @@ const App = () => {
         <ImageViewer style={{ height: 100, width: '100%' }} imageUrls={images} />
       </Modal> */}
       {/* </View> */}
-      <Ticket />
+      {/* <Ticket /> */}
       {/* <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <ScrollView
