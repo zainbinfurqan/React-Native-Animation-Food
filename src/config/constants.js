@@ -1,6 +1,16 @@
 
 
 export const constants = {
+    darkTheme: {
+        textColor: 'white',
+        iconsColors: 'white',
+        backgroundColor: 'black'
+    },
+    lightTheme: {
+        textColor: 'black',
+        iconsColors: 'black',
+        backgroundColor: 'white'
+    },
     FOOD_DATA_DARK_ICONS: {
         recipe_icon: require('../assets/cookiesligt.png'),
         preparing_time_icon: require('../assets/clocklight.png'),

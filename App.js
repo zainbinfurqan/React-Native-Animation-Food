@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -41,6 +41,9 @@ import Review from './src/FiverWork/Reviews'
 import FruitCard from './src/FiverWork/FuritCards'
 import Ticket from './src/FiverWork/Ticket'
 import HousingSocity from './src/HousingSocity'
+import ThemeToggle from './src/ThemeToggle/Home'
+import { Provider } from 'react-redux'
+import store from './src/redux'
 
 const images = [
   {
@@ -50,6 +53,8 @@ const images = [
     url: 'https://res.cloudinary.com/zainahmed/image/upload/v1598882225/garageAssets/qnfpnf5cw1iz8e6cnapz.jpg',
   },
 ]
+
+
 
 const App = () => {
   return (
@@ -62,7 +67,7 @@ const App = () => {
         <Image style={{ width: 200, height: 200 }}
           source={{ uri: 'https://res.cloudinary.com/zainahmed/image/upload/v1598882214/garageAssets/y6bhfe9ucpdj6y3jjnrv.png' }} />
       </ImageZoom> */}
-      <HousingSocity />
+      {/* <HousingSocity /> */}
       {/* <NetworkConnectivity /> */}
       {/* <Feed /> */}
       {/* <Notification /> */}
@@ -79,6 +84,9 @@ const App = () => {
       {/* <Modal visible={true} transparent={true}>
         <ImageViewer style={{ height: 100, width: '100%' }} imageUrls={images} />
       </Modal> */}
+      <Provider store={store}>
+        <ThemeToggle />
+      </Provider>
       {/* </View> */}
       {/* <Ticket /> */}
       {/* <StatusBar barStyle="dark-content" />
