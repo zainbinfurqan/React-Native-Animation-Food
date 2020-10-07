@@ -44,7 +44,7 @@ import HousingSocity from './src/HousingSocity'
 import ThemeToggle from './src/ThemeToggle/Home'
 import { Provider } from 'react-redux'
 import store from './src/redux'
-
+import FingerPrint from './src/FingerPrint'
 const images = [
   {
     url: 'https://res.cloudinary.com/zainahmed/image/upload/v1598882214/garageAssets/y6bhfe9ucpdj6y3jjnrv.png',
@@ -85,6 +85,7 @@ const App = () => {
         <ImageViewer style={{ height: 100, width: '100%' }} imageUrls={images} />
       </Modal> */}
       <Provider store={store}>
+        {/* <FingerPrint /> */}
         <ThemeToggle />
       </Provider>
       {/* </View> */}
