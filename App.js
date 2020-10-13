@@ -43,6 +43,7 @@ import Ticket from './src/FiverWork/Ticket'
 import HousingSocity from './src/HousingSocity'
 import ThemeToggle from './src/ThemeToggle/Home'
 import { Provider } from 'react-redux'
+import AddToCart from './src/AddToCart'
 import store from './src/redux'
 
 const images = [
@@ -85,7 +86,8 @@ const App = () => {
         <ImageViewer style={{ height: 100, width: '100%' }} imageUrls={images} />
       </Modal> */}
       <Provider store={store}>
-        <ThemeToggle />
+        {/* <ThemeToggle /> */}
+        <AddToCart/>
       </Provider>
       {/* </View> */}
       {/* <Ticket /> */}
