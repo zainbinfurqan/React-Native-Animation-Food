@@ -44,6 +44,7 @@ import HousingSocity from './src/HousingSocity'
 import ThemeToggle from './src/ThemeToggle/Home'
 import { Provider } from 'react-redux'
 import AddToCart from './src/AddToCart'
+import Camera from './src/Camera'
 import store from './src/redux'
 
 const images = [
@@ -87,7 +88,8 @@ const App = () => {
       </Modal> */}
       <Provider store={store}>
         {/* <ThemeToggle /> */}
-        <AddToCart/>
+        {/* <AddToCart /> */}
+        {/* <Camera /> */}
       </Provider>
       {/* </View> */}
       {/* <Ticket /> */}
